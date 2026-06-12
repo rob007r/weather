@@ -2,13 +2,25 @@
 <html>
 <head>
   <title>Weather Station</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1200px;
+      border: none;
+      display: block;
+    }
+  </style>
 </head>
-<body style="margin:0;">
+<body>
   <iframe
-    src="https://www.ecowitt.net/home/share?authorize=JKA9NA&units=1,4,9,13,16"
-    width="100%"
-    height="1000"
-    frameborder="0">
+    src="https://www.ecowitt.net/home/share?authorize=JKA9NA&device_id=QXlxb1FzektCZzFGMmRJVXI3RWRuUT09&units=1,4,9,13,16">
   </iframe>
 </body>
 </html>
