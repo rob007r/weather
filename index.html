@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html style="height: 100%; margin: 0;">
+<html lang="en" style="height: 100%; margin: 0; padding: 0;">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Weather Dashboard</title>
 </head>
-<body style="margin: 0; height: 100%; overflow: hidden;">
+<body style="
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch; /* Keeps mobile scrolling buttery smooth */
+">
+
     <iframe
         src="https://www.ecowitt.net/home/share?authorize=JKA9NA&device_id=QXlxb1FzektCZzFGMmRJVXI3RWRuUT09&units=1,4,9,13,16"
         style="
+            flex-grow: 1;
             width: 100%;
             height: 100%;
             border: none;
             display: block;
+            overflow: auto;
         ">
     </iframe>
+
 </body>
 </html>
